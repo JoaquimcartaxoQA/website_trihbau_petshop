@@ -1,3 +1,4 @@
+import logoImg from "./assets/logo.png";
 import { useEffect, useRef, useState } from "react";
 import { Bath, Camera, ChevronLeft, ChevronRight, Clock3, Gift, Heart, Home, MapPin, Menu, MessageCircle, Scissors, ShieldCheck, ShoppingBag, Sparkles, Star, X } from "lucide-react";
 import { animate, createScope, spring } from "animejs";
@@ -5,7 +6,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
-const WHATSAPP = "https://wa.me/5585999999999?text=Ola%2C%20quero%20agendar%20um%20horario%20na%20TrihbAU";
+const WHATSAPP = "https://wa.me/5585996855889?text=Ola%2C%20quero%20agendar%20um%20horario%20na%20TrihbAU";
 
 const gallery = [
   { src: "https://images.pexels.com/photos/19145895/pexels-photo-19145895.jpeg?auto=compress&cs=tinysrgb&w=1200", alt: "Pet recebendo um banho cuidadoso", wide: true },
@@ -27,9 +28,11 @@ const services = [
   { icon: Gift, title: "Datas especiais", text: "Experiencias tematicas e producoes delicadas para celebrar seu pet." },
 ];
 
-function Logo({ compact = false }: { compact?: boolean }) {
+function Logo({ compact = false }: { compact?: boolean }){
   return <div className="brand-lockup" aria-label="TrihbAU PetShop">
-    <span className={`logo-mark ${compact ? "logo-mark--small" : ""}`} aria-hidden="true"><svg viewBox="0 0 64 64" fill="none"><path d="M13 23 24 12l8 7 8-7 11 11-4 3 2 19c.5 7-5 12-12 12H27c-7 0-12.5-5-12-12l2-19-4-3Z" stroke="currentColor" strokeWidth="2.8" strokeLinejoin="round"/><path d="M25 34v4m14-4v4M27 44c3 3 7 3 10 0" stroke="currentColor" strokeWidth="2.8" strokeLinecap="round"/><path d="m17 27-7-8 3 15 6-2m28-5 7-8-3 15-6-2" stroke="currentColor" strokeWidth="2.8" strokeLinejoin="round"/></svg></span>
+    <span className={`logo-mark ${compact ? "logo-mark--small" : ""}`}>
+      <img src={logoImg} alt="TrihbAU PetShop" style={{ width: "100%", height: "100%", objectFit: "contain" }} />
+    </span>
     <span className="brand-name">Trihb<span>AU</span></span>{!compact && <span className="brand-sub">PETSHOP</span>}
   </div>;
 }
