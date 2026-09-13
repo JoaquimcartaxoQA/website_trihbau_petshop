@@ -6,7 +6,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
-const WHATSAPP = "https://wa.me/5585996855889?text=Ola%2C%20quero%20agendar%20um%20horario%20na%20TrihbAU";
+const WHATSAPP = "https://wa.me/5585997339952?text=Ola%2C%20quero%20agendar%20um%20horario%20na%20TrihbAU";
 
 const gallery = [
   { src: "https://images.pexels.com/photos/19145895/pexels-photo-19145895.jpeg?auto=compress&cs=tinysrgb&w=1200", alt: "Pet recebendo um banho cuidadoso", wide: true },
